@@ -1,0 +1,24 @@
+Example for Stroop I
+
+dat$ZSTR1T3_adjusted <- (dat$STR1T3_adjusted - (41.517 + (dat$Age_cent * 0.131) + (dat$Age2 * 0.003) + 
+                                                  (dat$Education_low * 3.595) + (dat$Education_high * -1.507))) / (sd(dat$STR1T3_adjusted, na.rm = TRUE))
+
+Example for Stroop II
+
+dat$ZSTR2T3_adjusted <- (dat$STR2T3_adjusted - (52.458 + (dat$Age_cent * 0.209) + (dat$Age2 * 0.007) + 
+                                                  (dat$Sex_num * -2.390) + (dat$Education_low * 4.235) + 
+                                                  (dat$Education_high * -2.346))) / (sd(dat$STR2T3_adjusted, na.rm = TRUE))
+
+Example for 15 Word Learning Test
+dat$ZWLTscore3 <- (dat$WLTscore3 - (25.440 + (dat$Age_cent * -0.150) + (dat$Age2 * -0.0016) + 
+                                      (dat$Sex_num * 2.217) + (dat$Education_low * -1.699) + 
+                                      (dat$Education_high * 1.467))) / (sd(dat$WLTscore3, na.rm = TRUE)
+                                      
+Example for Letter Digit Substitution Test
+dat$ZLDST <- (dat$LDST3 - (48.27 + (dat$Age_cent * -0.28) + (dat$Sex_num * 0.81) +
+                             (dat$Education_low * -4.53) + (dat$Education_high * 1.12))) / (sd(dat$LDST3, na.rm = TRUE)
+                             
+
+Example for Animal fluency test
+dat$ZWFT3 <- (dat$WFT3 - (24.777 + (dat$Age_cent * -0.97) + (dat$Education_low * -2.790) + 
+                            (dat$Education_high * 1.586))) / (sd(dat$WFT3, na.rm = TRUE)
